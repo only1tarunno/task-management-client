@@ -11,12 +11,12 @@
 .menu-horizontal > li .active,
 .dropdown-content > li .active {
   background-color: transparent !important;
-  color: #f76b6a !important;
+  color: #d88531 !important;
 }
 
 .navbar a:hover {
   background-color: transparent !important;
-  color: #f76b6a !important;
+  color: #d88531 !important;
   outline: none;
   outline-offset: 0;
 }

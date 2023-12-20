@@ -52,7 +52,7 @@ const Navbar = () => {
                 </label>
               </div>
               <div className="flex-1 justify-center lg:justify-start lg:flex-none lg:w-1/4">
-                <h2 className="text-5xl font-bold">TimeCraft</h2>
+                <h2 className="text-4xl lg:text-5xl font-bold">TimeCraft</h2>
               </div>
               <div className="flex-none hidden lg:block lg:flex-1 text-center">
                 <ul className="menu menu-horizontal text-[#333]">
@@ -93,7 +93,7 @@ const Navbar = () => {
                         <li>
                           <button
                             onClick={handleLogOut}
-                            className="hover:bg-transparent hover:text-[#f76b6a] rounded-sm"
+                            className="hover:bg-transparent hover:text-[#d88531] rounded-sm"
                           >
                             Logout
                           </button>
@@ -105,7 +105,7 @@ const Navbar = () => {
                   <div>
                     <button
                       onClick={() => navigate("/login")}
-                      className="btn bg-[#f76b6a] border-[#f76b6a] px-8 rounded  hover:bg-[#4c5161] hover:border-[#4c5161] text-white font-medium uppercase"
+                      className="btn  bg-[#d88531] border-[#d88531] px-4 lg:px-8 rounded  hover:bg-[#4c5161] hover:border-[#4c5161] text-white font-medium uppercase"
                     >
                       Login
                     </button>
