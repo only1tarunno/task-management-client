@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
+import Navbar from "../components/Navbar/Navbar";
 
 const Main = () => {
   const { pathname } = useLocation();
@@ -8,7 +9,7 @@ const Main = () => {
   }, [pathname]);
   return (
     <div>
-      {/* <Navbar></Navbar> */}
+      <Navbar></Navbar>
       <Outlet></Outlet>
       {/* <Footer></Footer> */}
     </div>
