@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "Inter", sans-serif;
+}
 .navbar a {
   border-radius: 3px;
   font-weight: 500;
