@@ -59,7 +59,9 @@ const router = createBrowserRouter([
         path: "edit/:id",
         element: <UpdateTask></UpdateTask>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/tasks/singleTask/${params.id}`),
+          fetch(
+            `https://task-management-server-rose.vercel.app/tasks/singleTask/${params.id}`
+          ),
       },
     ],
   },
