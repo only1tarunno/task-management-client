@@ -180,7 +180,7 @@ const TaskMange = () => {
                   {ongoing.map((task, index) => (
                     <Draggable
                       key={task?._id}
-                      draggableId={task._id} // Ensure a string is used as draggableId
+                      draggableId={task?._id} // Ensure a string is used as draggableId
                       index={index}
                     >
                       {(provided) => (
@@ -191,11 +191,11 @@ const TaskMange = () => {
                           className="bg-[#f8f8f8] capitalize space-y-2 p-4 rounded"
                         >
                           <h2 className="text-lg font-bold">
-                            Title: {task.title}
+                            Title: {task?.title}
                           </h2>
-                          <p>Description: {task.description}</p>
-                          <p>Priority: {task.priority}</p>
-                          <p>Deadline: {task.deadline}</p>
+                          <p>Description: {task?.description}</p>
+                          <p>Priority: {task?.priority}</p>
+                          <p>Deadline: {task?.deadline}</p>
                           <button
                             onClick={() => handleDelete(task?._id)}
                             className="btn  bg-[#d88531] border-[#d88531] btn-sm  rounded  hover:bg-[#4c5161] hover:border-[#4c5161] text-white font-medium"
