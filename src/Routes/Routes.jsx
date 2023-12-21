@@ -9,6 +9,7 @@ import PvtRoute from "./PvtRoute";
 import DashboardLayout from "../layout/DashboardLayout";
 import AddTask from "../pages/Dashboard/AddTask";
 import TaskMange from "../pages/Dashboard/TaskMange";
+import UpdateTask from "../pages/Dashboard/UpdateTask";
 
 const router = createBrowserRouter([
   {
@@ -56,7 +57,9 @@ const router = createBrowserRouter([
       },
       {
         path: "edit/:id",
-        element: <AddTask></AddTask>,
+        element: <UpdateTask></UpdateTask>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/tasks/singleTask/${params.id}`),
       },
       {
         path: "taskManagement",

@@ -20,7 +20,7 @@ const Navbar = () => {
   );
 
   const handleLogOut = () => {
-    logOut().then(navigate("/login")).catch();
+    logOut().then(navigate("/")).catch();
   };
   return (
     <div className="bg-white py-5 border-[#eaeaea]">

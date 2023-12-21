@@ -116,7 +116,7 @@ const TaskMange = () => {
           <Droppable droppableId="todo">
             {(provided) => (
               <div
-                className="border rounded-md min-h-screen p-5"
+                className="border rounded-md p-5"
                 {...provided.droppableProps}
                 ref={provided.innerRef}
               >
@@ -169,7 +169,7 @@ const TaskMange = () => {
           <Droppable droppableId="ongoing">
             {(provided) => (
               <div
-                className="border rounded-md min-h-screen p-5"
+                className="border rounded-md p-5"
                 {...provided.droppableProps}
                 ref={provided.innerRef}
               >
@@ -224,7 +224,7 @@ const TaskMange = () => {
           <Droppable droppableId="completed">
             {(provided) => (
               <div
-                className="border rounded-md min-h-screen p-5"
+                className="border rounded-md p-5"
                 {...provided.droppableProps}
                 ref={provided.innerRef}
               >

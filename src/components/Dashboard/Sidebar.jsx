@@ -19,7 +19,7 @@ const Sidebar = () => {
   };
 
   const handleLogOut = () => {
-    logOut().then(navigate("/login")).catch();
+    logOut().then(navigate("/")).catch();
   };
 
   return (
