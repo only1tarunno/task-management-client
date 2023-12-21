@@ -53,10 +53,8 @@ const Sidebar = () => {
               <img
                 // className='hidden md:block'
                 src={user.photoURL}
-                alt="logo"
-                width="100"
-                height="100"
-                className="rounded-[50%] shadow-lg"
+                alt="Profile Img"
+                className="rounded-[50%] shadow-lg w-[100px] h-[100px] object-cover"
               />
               <h2 className="text-xl text-center font-bold">
                 {user.displayName}

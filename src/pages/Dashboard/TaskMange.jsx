@@ -133,8 +133,8 @@ const TaskMange = () => {
                       {(provided) => (
                         <div
                           ref={provided.innerRef}
-                          {...provided.draggableProps}
-                          {...provided.dragHandleProps}
+                          {...provided?.draggableProps}
+                          {...provided?.dragHandleProps}
                           className="bg-[#f8f8f8] capitalize space-y-2 p-4 rounded"
                         >
                           <h2 className="text-lg font-bold">
@@ -170,7 +170,7 @@ const TaskMange = () => {
             {(provided) => (
               <div
                 className="border rounded-md p-5"
-                {...provided.droppableProps}
+                {...provided?.droppableProps}
                 ref={provided.innerRef}
               >
                 <h2 className="text-center text-2xl font-bold pb-5">
@@ -241,8 +241,8 @@ const TaskMange = () => {
                       {(provided) => (
                         <div
                           ref={provided.innerRef}
-                          {...provided.draggableProps}
-                          {...provided.dragHandleProps}
+                          {...provided?.draggableProps}
+                          {...provided?.dragHandleProps}
                           className="bg-[#f8f8f8] capitalize space-y-2 p-4 rounded"
                         >
                           <h2 className="text-lg font-bold">
