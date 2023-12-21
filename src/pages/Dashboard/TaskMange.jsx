@@ -5,14 +5,18 @@ import useAxiosPublic from "../../hooks/useAxiosPublic";
 import Loader from "../../components/shared/Loader";
 import { useState } from "react";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
+import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const TaskMange = () => {
   const { user } = useAuth();
   const axiosPublic = useAxiosPublic();
+  const navigate = useNavigate();
   const [tasks, setTasks] = useState([]);
   const [ongoing, setOngoing] = useState([]);
   const [completedtask, setComplete] = useState([]);
   const {
+    // eslint-disable-next-line no-unused-vars
     data: initialTasks = [],
     isLoading,
     refetch,
@@ -35,7 +39,6 @@ const TaskMange = () => {
   const handleDragEnd = async (result) => {
     if (!result.destination) return;
 
-    const sourceIndex = result.source.index;
     const destinationIndex = result.destination.index;
     const draggableId = result.draggableId;
 
@@ -82,6 +85,19 @@ const TaskMange = () => {
     }
   };
 
+  const handleDelete = async (id) => {
+    const res = await axiosPublic.delete(`/tasks/${id}`);
+    if (res.data.deletedCount) {
+      Swal.fire({
+        icon: "success",
+        title: "Task has been Deleted",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+      refetch();
+    }
+  };
+
   if (isLoading) {
     return <Loader />;
   }
@@ -119,7 +135,7 @@ const TaskMange = () => {
                           ref={provided.innerRef}
                           {...provided.draggableProps}
                           {...provided.dragHandleProps}
-                          className="bg-[#f8f8f8] capitalize space-y-2 px-2 py-4 rounded"
+                          className="bg-[#f8f8f8] capitalize space-y-2 p-4 rounded"
                         >
                           <h2 className="text-lg font-bold">
                             Title: {task?.title}
@@ -127,7 +143,20 @@ const TaskMange = () => {
                           <p>Description: {task?.description}</p>
                           <p>Priority: {task?.priority}</p>
                           <p>Deadline: {task?.deadline}</p>
-                          <button>Delete</button>
+                          <button
+                            onClick={() => handleDelete(task?._id)}
+                            className="btn  bg-[#d88531] border-[#d88531] btn-sm  rounded  hover:bg-[#4c5161] hover:border-[#4c5161] text-white font-medium"
+                          >
+                            Delete
+                          </button>
+                          <button
+                            onClick={() =>
+                              navigate(`/dashboard/edit/${task?._id}`)
+                            }
+                            className="btn ml-2 bg-[#d88531] border-[#d88531] btn-sm  rounded  hover:bg-[#4c5161] hover:border-[#4c5161] text-white font-medium"
+                          >
+                            Edit
+                          </button>
                         </div>
                       )}
                     </Draggable>
@@ -159,7 +188,7 @@ const TaskMange = () => {
                           ref={provided?.innerRef}
                           {...provided?.draggableProps}
                           {...provided?.dragHandleProps}
-                          className="bg-[#f8f8f8] capitalize space-y-2 px-2 py-4 rounded"
+                          className="bg-[#f8f8f8] capitalize space-y-2 p-4 rounded"
                         >
                           <h2 className="text-lg font-bold">
                             Title: {task.title}
@@ -167,6 +196,20 @@ const TaskMange = () => {
                           <p>Description: {task.description}</p>
                           <p>Priority: {task.priority}</p>
                           <p>Deadline: {task.deadline}</p>
+                          <button
+                            onClick={() => handleDelete(task?._id)}
+                            className="btn  bg-[#d88531] border-[#d88531] btn-sm  rounded  hover:bg-[#4c5161] hover:border-[#4c5161] text-white font-medium"
+                          >
+                            Delete
+                          </button>
+                          <button
+                            onClick={() =>
+                              navigate(`/dashboard/edit/${task?._id}`)
+                            }
+                            className="btn ml-2 bg-[#d88531] border-[#d88531] btn-sm  rounded  hover:bg-[#4c5161] hover:border-[#4c5161] text-white font-medium"
+                          >
+                            Edit
+                          </button>
                         </div>
                       )}
                     </Draggable>
@@ -200,7 +243,7 @@ const TaskMange = () => {
                           ref={provided.innerRef}
                           {...provided.draggableProps}
                           {...provided.dragHandleProps}
-                          className="bg-[#f8f8f8] capitalize space-y-2 px-2 py-4 rounded"
+                          className="bg-[#f8f8f8] capitalize space-y-2 p-4 rounded"
                         >
                           <h2 className="text-lg font-bold">
                             Title: {task?.title}
@@ -208,6 +251,20 @@ const TaskMange = () => {
                           <p>Description: {task?.description}</p>
                           <p>Priority: {task?.priority}</p>
                           <p>Deadline: {task?.deadline}</p>
+                          <button
+                            onClick={() => handleDelete(task?._id)}
+                            className="btn  bg-[#d88531] border-[#d88531] btn-sm  rounded  hover:bg-[#4c5161] hover:border-[#4c5161] text-white font-medium"
+                          >
+                            Delete
+                          </button>
+                          <button
+                            onClick={() =>
+                              navigate(`/dashboard/edit/${task?._id}`)
+                            }
+                            className="btn ml-2 bg-[#d88531] border-[#d88531] btn-sm  rounded  hover:bg-[#4c5161] hover:border-[#4c5161] text-white font-medium"
+                          >
+                            Edit
+                          </button>
                         </div>
                       )}
                     </Draggable>
