@@ -1,6 +1,5 @@
 import { useState } from "react";
 import MenuItem from "./MenuItem";
-import { MdDashboard } from "react-icons/md";
 import { AiOutlineMenu } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
 import { IoMdAdd } from "react-icons/io";
@@ -70,20 +69,15 @@ const Sidebar = () => {
 
             <nav>
               <MenuItem
-                label="Dashboard"
+                label={`Task Management`}
                 address="/dashboard"
-                icon={MdDashboard}
+                icon={FaTasks}
               ></MenuItem>
 
               <MenuItem
                 label={`Add Task`}
                 address="addTask"
                 icon={IoMdAdd}
-              ></MenuItem>
-              <MenuItem
-                label={`Task Management`}
-                address="taskManagement"
-                icon={FaTasks}
               ></MenuItem>
             </nav>
           </div>

@@ -3,7 +3,11 @@ import happy from "../../assets/happy_girl.png";
 
 const Testimonial = () => {
   return (
-    <div className="bg-gradient-to-r from-[#23a6d5] to-[#23d5ab] pt-10 pb-10 lg:pt-16 lg:pb-0">
+    <div
+      className="bg-gradient-to-r from-[#23a6d5] to-[#23d5ab] pt-10 pb-10 lg:pt-16 lg:pb-0"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <Container>
         <div className="flex flex-col lg:flex-row justify-between items-center">
           <div className="space-y-4 lg:w-[48%] w-full">

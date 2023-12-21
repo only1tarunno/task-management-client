@@ -49,7 +49,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/dashboard",
-        element: <div>fdf</div>,
+        element: <TaskMange></TaskMange>,
       },
       {
         path: "addTask",
@@ -60,10 +60,6 @@ const router = createBrowserRouter([
         element: <UpdateTask></UpdateTask>,
         loader: ({ params }) =>
           fetch(`http://localhost:5000/tasks/singleTask/${params.id}`),
-      },
-      {
-        path: "taskManagement",
-        element: <TaskMange></TaskMange>,
       },
     ],
   },

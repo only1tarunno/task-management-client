@@ -9,15 +9,27 @@ const WhoCan = () => {
     <div className="bg-[#f8fafc] py-10 lg:py-16">
       <Container>
         <div className="py-5 space-y-3">
-          <h2 className="font-bold text-2xl lg:text-3xl text-center max-w-[650px] mx-auto">
+          <h2
+            className="font-bold text-2xl lg:text-3xl text-center max-w-[650px] mx-auto"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
             Who can benefit from this?
           </h2>
 
-          <p className="text-base lg:text-lg text-center max-w-[550px] mx-auto">
+          <p
+            className="text-base lg:text-lg text-center max-w-[550px] mx-auto"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             Maximize Your Productivity with Our Time Management Tools
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-10 pt-10">
+        <div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-10 pt-10"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <div className="border p-6 pr-10 rounded-xl space-y-3">
             <img src={b1} className="w-14" alt="" />
             <h2 className="text-xl font-bold">Developers</h2>

@@ -8,7 +8,11 @@ const Banner = () => {
     <div className="pt-10 lg:pt-16">
       <Container>
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-0 justify-between items-center">
-          <div className="w-full lg:w-[48%] max-w-[600px] text-center lg:text-start space-y-2 lg:space-y-3 order-2 lg:order-1">
+          <div
+            className="w-full lg:w-[48%] max-w-[600px] text-center lg:text-start space-y-2 lg:space-y-3 order-2 lg:order-1"
+            data-aos="fade-right"
+            data-aos-duration="500"
+          >
             <h1 className="font-bold text-4xl lg:text-5xl">
               Manage work <br /> Efficiently
             </h1>
@@ -27,7 +31,11 @@ const Banner = () => {
               Let&apos;s Explore
             </button>
           </div>
-          <div className="w-full lg:w-[48%] order-1 lg:order-2">
+          <div
+            className="w-full lg:w-[48%] order-1 lg:order-2"
+            data-aos="fade-left"
+            data-aos-duration="500"
+          >
             <img src={heroImg} className="w-full" alt="" />
           </div>
         </div>
