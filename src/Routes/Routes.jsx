@@ -7,6 +7,7 @@ import Resgister from "../pages/Resgister";
 import Home from "../pages/Home/Home";
 import PvtRoute from "./PvtRoute";
 import DashboardLayout from "../layout/DashboardLayout";
+import AddTask from "../pages/Dashboard/AddTask";
 
 const router = createBrowserRouter([
   {
@@ -50,7 +51,7 @@ const router = createBrowserRouter([
       },
       {
         path: "addTask",
-        element: <div>ggg</div>,
+        element: <AddTask></AddTask>,
       },
       {
         path: "taskManagement",
