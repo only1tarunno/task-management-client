@@ -72,10 +72,7 @@ const Navbar = () => {
                         className="btn btn-ghost btn-circle avatar hover:border-none hover:bg-transparent"
                       >
                         <div className="w-8 h-8 rounded-[50%] object-cover">
-                          <img
-                            alt="Tailwind CSS Navbar component"
-                            src={user.photoURL}
-                          />
+                          <img alt="profile pic" src={user.photoURL} />
                         </div>
                       </div>
                       <ul
@@ -85,7 +82,7 @@ const Navbar = () => {
                         <li>
                           <Link
                             style={{ textTransform: "capitalize" }}
-                            to={"/dashboard/userDashboard"}
+                            to={"/dashboard"}
                           >
                             Dashboard
                           </Link>

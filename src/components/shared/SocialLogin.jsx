@@ -9,7 +9,7 @@ const SocialLogin = () => {
   const axiosPublic = useAxiosPublic();
   const location = useLocation();
   const navigate = useNavigate();
-  const from = location?.state?.from?.pathname || "/";
+  const from = location?.state?.from?.pathname || "/dashboard";
 
   const handleGoogleLogin = () => {
     googleSingin()

@@ -9,7 +9,7 @@ const GitLogin = () => {
   const axiosPublic = useAxiosPublic();
   const location = useLocation();
   const navigate = useNavigate();
-  const from = location?.state?.from?.pathname || "/";
+  const from = location?.state?.from?.pathname || "/dashboard";
 
   const handleGitLogin = () => {
     gitLogin()
@@ -17,7 +17,7 @@ const GitLogin = () => {
         Swal.fire({
           icon: "success",
           title: "Thank You",
-          text: "Google Login was Succesful",
+          text: "GitHub Login was Succesful",
           showConfirmButton: false,
           timer: 1500,
         });
@@ -35,7 +35,7 @@ const GitLogin = () => {
         Swal.fire({
           icon: "error",
           title: "Oops",
-          text: "Google Login is Incomplete",
+          text: "GitHub Login is Incomplete",
         });
       });
   };

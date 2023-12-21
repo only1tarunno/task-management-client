@@ -5,12 +5,13 @@ import FAQPage from "../pages/FAQPage";
 import Login from "../pages/Login";
 import Resgister from "../pages/Resgister";
 import Home from "../pages/Home/Home";
+import PvtRoute from "./PvtRoute";
+import DashboardLayout from "../layout/DashboardLayout";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
-
     children: [
       {
         path: "/",
@@ -32,6 +33,28 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Resgister></Resgister>,
+      },
+    ],
+  },
+  {
+    path: "/dashboard",
+    element: (
+      <PvtRoute>
+        <DashboardLayout />
+      </PvtRoute>
+    ),
+    children: [
+      {
+        path: "/dashboard",
+        element: <div>fdf</div>,
+      },
+      {
+        path: "addTask",
+        element: <div>ggg</div>,
+      },
+      {
+        path: "taskManagement",
+        element: <div>gggff</div>,
       },
     ],
   },
