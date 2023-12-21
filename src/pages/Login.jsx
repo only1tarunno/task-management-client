@@ -6,6 +6,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 import { FaSpinner } from "react-icons/fa6";
 import SocialLogin from "../components/shared/SocialLogin";
+import GitLogin from "../components/shared/GitLogin";
 
 const Login = () => {
   const { login } = useAuth();
@@ -96,6 +97,7 @@ const Login = () => {
             <div className="flex flex-col w-full border-opacity-50 pt-3">
               <div className="divider">OR</div>
               <SocialLogin></SocialLogin>
+              <GitLogin></GitLogin>
               <p className="px-6 text-sm text-center text-black">
                 Don&apos;t have an account?{" "}
                 <Link

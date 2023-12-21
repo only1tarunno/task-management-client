@@ -7,6 +7,7 @@ import { useState } from "react";
 import useAuth from "../hooks/useAuth";
 import useAxiosPublic from "../hooks/useAxiosPublic";
 import { useForm } from "react-hook-form";
+import GitLogin from "../components/shared/GitLogin";
 
 const Register = () => {
   const [spin, setspin] = useState(false);
@@ -166,6 +167,7 @@ const Register = () => {
             <div className="flex flex-col w-full border-opacity-50 pt-3">
               <div className="divider">OR</div>
               <SocialLogin></SocialLogin>
+              <GitLogin></GitLogin>
               <p className="px-6 text-sm text-center text-black">
                 Already have an account?{" "}
                 <Link
