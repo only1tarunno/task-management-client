@@ -39,8 +39,8 @@ const UpdateTask = () => {
       {" "}
       <div className="py-16">
         <InnerSectiontitle
-          title={"Add Tasks"}
-          subtitle={"Fill the form to add task"}
+          title={"update Task"}
+          subtitle={"Fill the form to update task"}
         ></InnerSectiontitle>
       </div>
       <div>

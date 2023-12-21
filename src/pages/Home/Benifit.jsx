@@ -29,7 +29,7 @@ const Benifit = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-10 pt-10">
           <div
             className="card card-compact  bg-base-100 shadow-xl"
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-duration="2000"
           >
             <figure>
@@ -43,7 +43,7 @@ const Benifit = () => {
           <div
             className="card card-compact  bg-base-100 shadow-xl"
             data-aos="fade-up"
-            data-aos-duration="2000"
+            data-aos-duration="2500"
           >
             <figure>
               <img src={p2} className="w-full" />
@@ -56,7 +56,7 @@ const Benifit = () => {
           <div
             className="card card-compact  bg-base-100 shadow-xl"
             data-aos="fade-up"
-            data-aos-duration="2000"
+            data-aos-duration="3000"
           >
             <figure>
               <img src={p3} className="w-full" />
@@ -68,8 +68,8 @@ const Benifit = () => {
           </div>
           <div
             className="card card-compact  bg-base-100 shadow-xl"
-            data-aos="fade-left"
-            data-aos-duration="2000"
+            data-aos="fade-up"
+            data-aos-duration="3000"
           >
             <figure>
               <img src={p4} className="w-full" />

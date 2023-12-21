@@ -10,7 +10,7 @@ const Testimonial = () => {
     >
       <Container>
         <div className="flex flex-col lg:flex-row justify-between items-center">
-          <div className="space-y-4 lg:w-[48%] w-full">
+          <div className="space-y-4 lg:w-[48%] w-full ">
             <h2 className="font-bold text-2xl lg:text-3xl text-white ">
               We love our customers and they love us too.
             </h2>

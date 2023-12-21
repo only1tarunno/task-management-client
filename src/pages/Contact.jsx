@@ -6,8 +6,8 @@ const Contact = () => {
     <div>
       <InnerPageBanner subTitle="contact" title="Contact Us"></InnerPageBanner>
       <Container>
-        <div className="py-20 grid md:grid-cols-12 md:gap-8">
-          <div className="md:col-span-4">
+        <div className="py-20 grid md:grid-cols-12 gap-5 md:gap-8">
+          <div className="md:col-span-4 order-2 md:order-1">
             <div>
               <h2 className="text-4xl font-bold text-[#333] text-start">
                 Contact Info.
@@ -40,7 +40,7 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <div className="md:col-span-8">
+          <div className="md:col-span-8 order-1 md:order-2">
             <h2 className="text-4xl font-bold text-[#333] text-start">
               Leave Your Message
             </h2>

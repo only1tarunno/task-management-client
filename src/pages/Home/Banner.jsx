@@ -7,9 +7,9 @@ const Banner = () => {
   return (
     <div className="pt-10 lg:pt-16">
       <Container>
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-0 justify-between items-center">
+        <div className="flex flex-col md:flex-row gap-8 lg:gap-0 justify-between items-center">
           <div
-            className="w-full lg:w-[48%] max-w-[600px] text-center lg:text-start space-y-2 lg:space-y-3 order-2 lg:order-1"
+            className="w-full lg:w-[48%] max-w-[600px] text-center lg:text-start space-y-2 lg:space-y-3 order-2 md:order-1 pb-10 md:pb-0"
             data-aos="fade-right"
             data-aos-duration="500"
           >
@@ -32,7 +32,7 @@ const Banner = () => {
             </button>
           </div>
           <div
-            className="w-full lg:w-[48%] order-1 lg:order-2"
+            className="w-full lg:w-[48%] order-1 md:order-2"
             data-aos="fade-left"
             data-aos-duration="500"
           >

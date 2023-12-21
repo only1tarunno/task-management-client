@@ -43,7 +43,7 @@ const AddTask = () => {
           subtitle={"Fill the form to add task"}
         ></InnerSectiontitle>
       </div>
-      <div>
+      <div className="pb-10">
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="space-y-3 w-full lg:w-2/3 mx-auto"

@@ -103,7 +103,7 @@ const TaskMange = () => {
   }
 
   return (
-    <>
+    <div className="pb-10">
       {" "}
       <div className="py-16">
         <InnerSectiontitle
@@ -276,7 +276,7 @@ const TaskMange = () => {
           </Droppable>
         </div>
       </DragDropContext>
-    </>
+    </div>
   );
 };
 
