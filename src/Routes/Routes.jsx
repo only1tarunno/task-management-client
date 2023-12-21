@@ -8,6 +8,7 @@ import Home from "../pages/Home/Home";
 import PvtRoute from "./PvtRoute";
 import DashboardLayout from "../layout/DashboardLayout";
 import AddTask from "../pages/Dashboard/AddTask";
+import TaskMange from "../pages/Dashboard/TaskMange";
 
 const router = createBrowserRouter([
   {
@@ -55,7 +56,7 @@ const router = createBrowserRouter([
       },
       {
         path: "taskManagement",
-        element: <div>gggff</div>,
+        element: <TaskMange></TaskMange>,
       },
     ],
   },
